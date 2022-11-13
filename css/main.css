@@ -959,9 +959,7 @@ li.pointer {
   border: 1px solid black;*/
   border-radius: 4px;
   width: 442px;
-  
   margin: 0
-  align-items: ;
 }
 
 .form-group p {
@@ -978,7 +976,7 @@ input {
 
 label {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   margin-bottom: 8px;
 }
 
