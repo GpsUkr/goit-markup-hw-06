@@ -1077,8 +1077,10 @@ li.pointer {
   color: var(--second-text-color);
   left: 12px;
   top: -10px;
-  
-  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
 
 }
 
@@ -1089,7 +1091,7 @@ li.pointer {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  color: #757575;
+  color: rgba(117, 117, 117, 0.5);
   height: 120px;
   width: 448px;
   resize: none;
@@ -1106,9 +1108,12 @@ li.pointer {
 
 .form-label-messeg {
   position: absolute;
-  color: var(--second-text-color);
   left: 12px;
   top: -10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--second-text-color);
 }
 
 .form-chekbox-icon {
