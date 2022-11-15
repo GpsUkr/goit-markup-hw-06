@@ -478,9 +478,13 @@
             </label>
           </div>
       </div>
-      <label>
-        <input type="checkbox" name="">
-        <span>Погоджуюся з розсилкою та приймаю <a class="" href="">Умови договору</a></span>
+      <label class="modal-primacy">
+        <input class="form-chekbox visually-hidden" type="checkbox" name="agreement-chekbox">
+        <svg class="form-chekbox-icon" weight="18" height="18">
+          <use class="uncheked" href="./img/symbol-defs.svg#icon-unchek"></use>
+          <use class="cheked" href="./img/symbol-defs.svg#icon-check"></use>
+        </svg>
+        <span class="modal-form-text">Погоджуюся з розсилкою та приймаю <a class="modal-form-link" href="">Умови договору</a></span>
       </label>
       <button class="submit-btn" type="submit">Відправити</button>
       </form>
