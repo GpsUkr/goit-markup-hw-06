@@ -1044,6 +1044,8 @@ li.pointer {
 }
 
 .form-label {
+  display: block;
+  padding-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1068,13 +1070,6 @@ li.pointer {
 
 .form-messeg:focus-visible {
   border-color: var(--accent-color);
-}
-
-.form-label-messeg {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  color: var(--second-text-color);
 }
 
 .form-chekbox-icon {
