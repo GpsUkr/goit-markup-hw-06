@@ -446,35 +446,42 @@
         <form class="modal-form">
           <div class="form-group" role="group" aria-labelledby="contact-details-head">
             <label class="form-field">
-              <input class="form-input" type="text" required minlength="2">
               <span class="form-label">Ім'я</span>
-              <svg class="form-icon" width="18" heigt="18">
-                <use href="./img/symbol-defs.svg#icon-person-black"></use>
-              </svg>
+              <span class="form-group-input">
+                <input class="form-input" type="text" required minlength="2">
+                <svg class="form-icon" width="18" heigt="18">
+                  <use href="./img/symbol-defs.svg#icon-person-black"></use>
+                </svg>
+              </span>
             </label>
           </div>
           <div class="form-group">
             <label class="form-field">
-              <input class="form-input" type="text" name="" required minlength="12" maxlength="12">
               <span class="form-label">Телефон</span>
-              <svg class="form-icon" width="18" heigt="18">
-                <use href="./img/symbol-defs.svg#icon-phone-black"></use>
-              </svg>
+              <span class="form-group-input">
+                <input class="form-input" type="text" name="" required minlength="12" maxlength="12">
+                <svg class="form-icon" width="18" heigt="18">
+                  <use href="./img/symbol-defs.svg#icon-phone-black"></use>
+                </svg>
+              </span>
             </label>
           </div>
           <div class="form-group">
             <label class="form-field">
-              <input class="form-input" type="text" name="">
               <span class="form-label">Пошта</span>
-              <svg class="form-icon" width="18" heigt="18">
-                <use href="./img/symbol-defs.svg#icon-email-black"></use>
-              </svg>
+              <span class="form-group-input">
+                <input class="form-input" type="text" name="">
+                <svg class="form-icon" width="18" heigt="18">
+                  <use href="./img/symbol-defs.svg#icon-email-black"></use>
+                </svg>
+              </span>
             </label>
           </div>
           <div class="form-group">
             <label class="form-field">
-              <textarea class="form-messeg" name="" rows="6" placeholder="Введіть текст"></textarea>
               <span class="form-label-messeg">Коментар</span>
+              <textarea class="form-messeg" name="" rows="6" placeholder="Введіть текст"></textarea>
+
             </label>
           </div>
       </div>
@@ -484,7 +491,8 @@
           <use class="uncheked" href="./img/symbol-defs.svg#icon-unchek"></use>
           <use class="cheked" href="./img/symbol-defs.svg#icon-check"></use>
         </svg>
-        <span class="modal-form-text">Погоджуюся з розсилкою та приймаю <a class="modal-form-link" href="">Умови договору</a></span>
+        <span class="modal-form-text">Погоджуюся з розсилкою та приймаю <a class="modal-form-link" href="">Умови
+            договору</a></span>
       </label>
       <button class="submit-btn" type="submit">Відправити</button>
       </form>

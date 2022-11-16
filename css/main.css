@@ -826,6 +826,7 @@ li.pointer {
   gap: 10px;
   cursor: pointer;
 }
+
 .container-icon {
   margin-right: 93px;
 }
@@ -899,9 +900,6 @@ li.pointer {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(2px);
   transition: opacity 250ms linear, visibility 250ms linear;
-  /*justify-content: center;
-  align-items: center;*/
-  
 }
 
 .backdrop.is-hidden {
@@ -911,7 +909,7 @@ li.pointer {
 }
 
 .modal {
- 
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -921,8 +919,6 @@ li.pointer {
   padding: 10px;
   margin: 0;
   border-radius: 4px;
- /* justify-content: center;
-  align-items: center;*/
   background-color: var(--style-color);
 }
 
@@ -944,44 +940,34 @@ li.pointer {
 
 .close-btn:hover {
   fill: var(--accent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/*.close-btn-icon:hover {
-  fill: var(--accent-color);
-}*/
 
 .modal-title {
   padding: 20px;
-  
   font-weight: 700;
   font-size: 20px;
   line-height: calc(28/ 20);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
- /* align-items: center;
-  justify-content: center;*/
   text-align: center;
 }
 
-.modal-form {
-  
-  
-
-  
-}
+.modal-form {}
 
 .form-group {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   border-radius: 4px;
   width: 448px;
   margin: 0 auto;
-  
-  
-  
+}
 
+.form-group-input {
+  position: relative;
 }
 
 .submit-btn {
@@ -1004,6 +990,9 @@ li.pointer {
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: #188CE8;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-primacy {
@@ -1015,7 +1004,7 @@ li.pointer {
 }
 
 .modal-form-text {
-  
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.74;
@@ -1025,63 +1014,40 @@ li.pointer {
   align-items: center;
 }
 
+.modal-form-link {
+  text-decoration: underline;
+  margin-left: 8px;
+  color: var(--accent-color);
+}
 
-/*.form-group p {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 20px;
-  color: #757575;
-}*/
-
-
-.form-field:focus-within > .form-icon {
+.form-group-input:focus-within>.form-icon {
   fill: var(--accent-color);
 }
 
 .form-input {
   position: relative;
   width: 100%;
-  
   height: 40px;
   padding: 0;
   padding-left: 36px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
   color: #757575;
-  
-  
   border-radius: 4px;
- 
-  
 }
 
-.form-input:focus-visible  {
+.form-input:focus-visible {
   border-color: #2196f3;
   transition-property: border, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-  
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/*.form-input:focus {
-  border-color: #2196f3;
-}
-
-.form-inputnot:not(:placeholder-shown):required:valid {
- /* border-color: #2196f3; 
-} */
 
 .form-label {
-  position: absolute;
-  color: var(--second-text-color);
-  left: 12px;
-  top: -10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-
-
+  color: var(--second-text-color);
 }
 
 .form-messeg {
@@ -1097,9 +1063,7 @@ li.pointer {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
-  
   border-radius: 4px;
- 
 }
 
 .form-messeg:focus-visible {
@@ -1107,9 +1071,6 @@ li.pointer {
 }
 
 .form-label-messeg {
-  position: absolute;
-  left: 12px;
-  top: -10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1125,10 +1086,10 @@ li.pointer {
 
 .form-chekbox-icon .uncheked {
   opacity: 1;
-  
+
 }
 
-.form-chekbox:checked + .form-chekbox-icon .uncheked {
+.form-chekbox:checked+.form-chekbox-icon .uncheked {
   opacity: 0;
   transition-property: color;
   transition-duration: 250ms;
@@ -1138,10 +1099,9 @@ li.pointer {
 
 .form-chekbox-icon .cheked {
   opacity: 0;
-
 }
 
-.form-chekbox:checked + .form-chekbox-icon .cheked {
+.form-chekbox:checked+.form-chekbox-icon .cheked {
   opacity: 1;
   transition-property: color;
   transition-duration: 250ms;
@@ -1150,10 +1110,10 @@ li.pointer {
 
 .form-icon {
   position: absolute;
-  display: flex;
   height: 18px;
-  left: 20px;
-  top: 20px;
+  top: 0;
+  left: 5%;
+  transform: translate(-50%);
   fill: var(--primary-text-color);
 }
 
@@ -1161,22 +1121,13 @@ li.pointer {
   fill: var(--accent-color);
 }
 
-.modal-form-link {
-  text-decoration: underline;
-  color: var(--accent-color);
-}
+
 
 
 input {
-  /*padding: 8px;
-  */
   font-family: inherit;
-  /*height: 40px;*/
- 
 }
 
 label {
-  display: flex;
   margin-bottom: 8px;
 }
-
